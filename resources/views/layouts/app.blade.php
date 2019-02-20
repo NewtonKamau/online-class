@@ -37,11 +37,11 @@
                     </nav>
                 </div>
                 <div class="nav-right" style="overflow: visible">
-                    @if (!auth::guest())
+                    @if (auth::guest())
                     <a href="#" class="nav-item is-tab">Login</a>
                     <a href="#" class="nav-item is-tab">Join the Community</a>
                     @else
-                        <button class="dropdown nav-item is-tab">
+                        <button class="dropdown nav-item  is-tab">
                             Hey Alex <span class="icon"><i class="fa fa-caret-down"></i></span>
 
                             <ul class="dropdown-menu">

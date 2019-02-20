@@ -17419,6 +17419,10 @@ label.panel-block:hover {
   background: rgba(227, 52, 47, 0.05);
 }
 
+is-muted {
+  color: whitesmoke grey !important;
+}
+
 .dropdown {
   position: relative;
 }

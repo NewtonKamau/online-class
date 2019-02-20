@@ -1,7 +1,36 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="columns">
+    <div class="colum  is-offset-one-third">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title">Log in</h1>
+            <form action="{{route('login')}}" method="POST" role="form">
+                {{ csrf_field() }}
+                <div class="field">
+                    <label for="email" class="label">Email Address</label>
+                    <p class="control">
+                        <input class="input" type="text" name="email" id="email" placeholder="name@example.com">
+                    </p>
+                </div>
+                 <div class="field">
+                    <label for="password" class="label">Password</label>
+                    <p class="control">
+                        <input class="input" type="password" name="password" id="password">
+                    </p>
+                </div>
+                <b-checkbox name="remember">Remember me </b-checkbox>
+                <button class="button primary is-outlined is-fullwidth" m-t-10>Log In</button>
+            </form>
+            <!--end of .card-content -->
+            </div>
+        </div>
+     <h5 class="has-text-centered" m-t-20><a href="{{route('password.request')}}" class="is-muted">Forgot Password</a> </h5>
+
+    </div>
+</div>
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +98,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

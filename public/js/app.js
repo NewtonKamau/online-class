@@ -56584,7 +56584,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.use(buefy__WEBPACK_IMPORTED_MODULE_0___default.a); // Vue.Component('example', require('/components/Example.vue'));
 
-var app = new vue({
+var app = new Vue({
   el: '#app',
   data: {}
 });
