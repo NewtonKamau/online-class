@@ -56584,6 +56584,16 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.use(buefy__WEBPACK_IMPORTED_MODULE_0___default.a); // Vue.Component('example', require('/components/Example.vue'));
 
+var app = new vue({
+  el: '#app',
+  data: {}
+});
+$(document).ready(function () {
+  $('button.dropdown').hover(function (e) {
+    $(this).toggleClass('is-open');
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
